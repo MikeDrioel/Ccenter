@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <title> Creative Center - Designcenter </title>
     <link rel="stylesheet" href="main.css" media="screen" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
@@ -11,22 +15,27 @@
 <div class="body">
 
     <div class="main_head">
-        <div class="main_bar">
+        <nav class="main_bar" id="menu">
             <a class="main_center" href="index.html">
                 <img class="bar_logo" src="./CEC_DesignerArchive/CEC Logo's/CEC_White.png">
-                <h3 class="bar_title"> Creative Centers </h3>
+                <h3 class="bar_title"> Creative Center </h3>
             </a>
             <div class="panel">
-                <a class="bar_panel" href="#"> Login </a>
-                <a class="bar_panel" href="#"> Register </a>
+                <a class="bar_panel" target="_blank" href="https://login.creativecenter.nl/"> Login </a>
+                <a class="bar_panel" target="_blank" href="https://login.creativecenter.nl/"> Register </a>
+                <a href="javascript:myFunction();"><img class="menu_burger" src="./CEC_DesignerArchive/CEC%20Icons/menu.png"></a>
             </div>
-        </div>
+            <div class="panel_index">
+                <a class="bar_panel2" target="_blank" href="https://login.creativecenter.nl/"> Login </a>
+                <a class="bar_panel2" target="_blank" href="https://login.creativecenter.nl/"> Register </a>
+            </div>
+        </nav>
 
         <img class="main_logo" src="./CEC_DesignerArchive/CEC Logo's/DC Blue.png">
 
         <header class="main_header">
             <h1 class="header_title"> DesignCenter </h1>
-            <a class="header_button" href="#"> Shout an order! </a>
+            <a class="header_button" id="header_button" href="#section3"> Plaats een order! </a>
         </header>
 
         <a class="mousebuttonclick" href="#main_icons"><img class="mousebutton" src="./CEC_DesignerArchive/CEC Icons/Mouse.gif"></a>
@@ -37,7 +46,7 @@
 
         <div class="icons-icon">
             <img class="icons-image" src="./CEC_DesignerArchive/CEC Icons/paint-brush.png">
-            <h3 class="icons_title"> Premium Design </h3>
+            <h3 class="icons_title"> Premium Designs </h3>
             <div class="icons_text">
                 <h4>- Each design is custom made</h4>
                 <h4>- All our products are created in high quality</h4>
@@ -47,7 +56,7 @@
 
         <div class="icons-icon">
             <img class="icons-image" src="./CEC_DesignerArchive/CEC Icons/give-money.png">
-            <h3 class="icons_title"> Fair Price </h3>
+            <h3 class="icons_title"> Fair Prices </h3>
             <div class="icons_text">
                 <h4>- Private & Enterprise service</h4>
                 <h4>- Receive what you paid for</h4>
@@ -67,43 +76,45 @@
     </section>
 
 
-    <section class="section">
-        <div class="line"></div><h2 class="titleII">Our team</h2><div class="line"></div><br/><br/><br/><br/>
-        <article class="worker">
-            <img class="profile_picture" src="./CEC_DesignerArchive/CEC Logo's/CEC 4x4.png">
-            <h4>Mike. D</h4>
-            <h5>CEO</h5>
-        </article>
-        <article class="worker">
-            <img class="profile_picture" src="./CEC_DesignerArchive/CEC Logo's/CEC 4x4.png">
-            <h4>Lennart. P</h4>
-            <h5>Manager / Designer</h5>
-        </article>
-        <article class="worker">
-            <img class="profile_picture" src="./CEC_DesignerArchive/CEC Logo's/CEC 4x4.png">
-            <h4>Jord. L</h4>
-            <h5>Motion Designer</h5>
+    <section class="section" id="section2">
+        <article class="article">
+            <div class="line"></div><h2 class="titleII">Ons team</h2><div class="line"></div><br/><br/><br/><br/>
+            <div class="worker">
+                <img class="profile_picture" src="./CEC_DesignerArchive/CEC%20Icons/C%20ICON%20Profile.png">
+                <h4>Lennart P.</h4>
+                <h5>Designer</h5>
+            </div>
+            <div class="worker">
+                <img class="profile_picture" src="./CEC_DesignerArchive/CEC%20Icons/C%20ICON%20Profile.png">
+                <h4>Jaron L.</h4>
+                <h5>Motion Designer</h5>
+            </div>
+            <div class="worker">
+                <img class="profile_picture" src="./CEC_DesignerArchive/CEC%20Icons/C%20ICON%20Profile.png">
+                <h4>Soliciteer voor deze spot</h4>
+                <h5>???</h5>
+            </div>
         </article>
     </section>
 
 
     <section class="section">
-        <article class="article2">
-            <div class="line"></div><h2 class="titleII">About us</h2><div class="line"></div>
+        <article class="article">
+            <div class="line"></div><h2 class="titleII">Over ons</h2><div class="line"></div>
             <p class="text">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. To achieve this, it would be necessary to have uniform grammar, pronunciation and more common words.
         </article>
     </section>
 
-    <section class="section">
+    <section class="section" id="section3">
         <article class="article">
-            <div class="line"></div><h2 class="titleII">Shout an order</h2><div class="line"></div>
+            <div class="line"></div><h2 class="titleII">Plaats een order</h2><div class="line"></div>
             <p class="text">The European languages are members of the same family. Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary. The languages only differ in their grammar, their pronunciation and their most common words. Everyone realizes why a new common language would be desirable: one could refuse to pay expensive translators. </p>
             <a class="header_button2" href="#"> Shout! </a>
         </article>
     </section>
 
     <section class="section" id="portfolio">
-        <article class="article2">
+        <article class="article">
             <div class="line"></div><h2 class="titleII">Portfolio</h2><div class="line"></div><br/><br/><br/><br/>
             <img class="img_icon" src="./CEC_DesignerArchive/CEC Icons/img.png">
             <img class="img_icon" src="./CEC_DesignerArchive/CEC Icons/img.png">
@@ -117,55 +128,73 @@
 
         <div class="footer_logo_block">
             <img class="footer_logo" src="./CEC_DesignerArchive/CEC Logo's/CEC_White.png">
-            <h3 class="logo_text">Creative Center</h3>
+            <h3 id="logo_text">Creative Center</h3>
         </div>
 
         <div class="footerline"></div>
 
-        <article class="footer_article">
-            <h3>Portfolio's</h3>
-            <div class="footer_article2">
-                <a href="./CodeCenter.html"><b>> </b>CodeCenter</a>
-                <a href="./DesignCenter.html"><b>> </b>DesignCenter</a>
-            </div>
-        </article>
 
-        <article class="footer_article">
-            <h3>Centers</h3>
-            <div class="footer_article2">
-                <a href="./CodeCenter.html"><b>> </b>CodeCenter</a>
-                <a href="./DesignCenter.html"><b>> </b>DesignCenter</a>
-            </div>
-        </article>
 
-        <article class="footer_article">
-            <h3>Payment methods</h3>
-            <div class="footer_article2">
-                <h4>method 1</h4>
-                <h4>method 2</h4>
-                <h4>method 3</h4>
-            </div>
-        </article><br/>
+        <table class="footer_row">
+            <tr>
+                <td colspan="2" class="footer_table_title"><h3 class="footer_h3">Fast Travel:</h3></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC%20Logo's/CEC_White.png"></td>
+                <td><a href="index.html"><h4 class="footer_h4">Home</h4></a></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC%20Logo's/CEC_White.png"></td>
+                <td><a href="contact.html"><h4 class="footer_h4">Contact</h4></a></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC%20Logo's/CEC_White.png"></td>
+                <td><a target="_blank" href="https://login.creativecenter.nl/"><h4 class="footer_h4">Login</h4></a></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC%20Logo's/CEC_White.png"></td>
+                <td><a target="_blank" href="https://login.creativecenter.nl/"><h4 class="footer_h4">Register</h4></a></td>
+            </tr>
+        </table>
 
-        <div class="contact">
-            <img class="contact_image" src="./CEC_DesignerArchive/CEC Icons/mail.png">
-            <h4>Contact@CreativeCenters.one</h4>
-        </div>
-        <div class="contact">
-            <img class="contact_image" src="./CEC_DesignerArchive/CEC Icons/phone.png">
-            <h4>06-82575887</h4>
-        </div>
+        <table class="footer_row">
+            <tr>
+                <td colspan="2" class="footer_table_title"><h3 class="footer_h3">Centers:</h3></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC%20Logo's/CC_White.png"></td>
+                <td><a href="CodeCenter.html"><h4 class="footer_h4">CodeCenter</h4></a></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC%20Logo's/DC_White.png"></td>
+                <td><a href="DesignCenter.html"><h4 class="footer_h4">DesignCenter</h4></a></td>
+            </tr>
+        </table>
+
+        <table class="footer_row">
+            <tr>
+                <td colspan="2" class="footer_table_title"><h3 class="footer_h3">Contact:</h3></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC Icons/mail.png"></td>
+                <td><h4 class="footer_h4">Contact@CreativeCenter.nl</h4></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC Icons/phone.png"></td>
+                <td><h4 class="footer_h4">06-82575887</h4></td>
+            </tr>
+        </table>
+
 
         <div class="copyright">
-
             <div class="socialmedia_block">
-                <a class="Facebook" href="http://www.Facebook.com" target="_blank"></a>
-                <a class="Instagram" href="http://www.Instagram.com" target="_blank"></a>
-                <a class="Twitter" href="http://www.Twitter.com" target="_blank"></a>
+                <a class="Facebook" href="https://www.Facebook.com" target="_blank"></a>
+                <a class="Instagram" href="https://www.Instagram.com" target="_blank"></a>
+                <a class="Twitter" href="https://www.Twitter.com" target="_blank"></a>
             </div>
-
-            <h4 class="text_footer">© Copyright 2017 Creative Centers</h4>
+            <h4 class="footer_h4" id="footer_text">© Copyright 2018 CreativeCenter</h4>
         </div>
+
     </footer>
 
 </div>

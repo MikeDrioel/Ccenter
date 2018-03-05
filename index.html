@@ -2,8 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title> Creative Center - Designcenter </title>
+    <title> Creative Center </title>
     <link rel="stylesheet" href="main.css" media="screen" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("panel_index");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
 </head>
 
 <body>
@@ -11,119 +27,177 @@
 <div class="body">
 
     <div class="main_head">
-        <div class="main_bar">
+        <nav class="main_bar" id="menu">
             <a class="main_center" href="index.html">
                 <img class="bar_logo" src="./CEC_DesignerArchive/CEC Logo's/CEC_White.png">
-                <h3 class="bar_title"> Creative Centers </h3>
+                <h3 class="bar_title"> Creative Center </h3>
             </a>
             <div class="panel">
-                <a class="bar_panel" href="#"> Login </a>
-                <a class="bar_panel" href="#"> Register </a>
+                <a class="bar_panel" target="_blank" href="https://login.creativecenter.nl/"> Login </a>
+                <a class="bar_panel" target="_blank" href="https://login.creativecenter.nl/"> Register </a>
+                <a href="javascript:myFunction();"><img class="menu_burger" src="./CEC_DesignerArchive/CEC%20Icons/menu.png"></a>
+            </div>
+            <div class="panel_index">
+                <a class="bar_panel2" target="_blank" href="https://login.creativecenter.nl/"> Login </a>
+                <a class="bar_panel2" target="_blank" href="https://login.creativecenter.nl/"> Register </a>
+            </div>
+        </nav>
+
+
+
+
+        <div id="slideshow">
+            <div class="slide active" id="picture1">
+                <div class="slide_overlay">
+                    <header class="header">
+                        <h1 class="main_title">CreativeCenter</h1>
+                        <a class="header_button" href="#scrollto"> Get started! </a>
+                    </header>
+                    <div class="slider_circle" id="slider_cirle"></div>
+                    <div class="slider_circle"></div>
+                    <div class="slider_circle"></div>
+                </div>
+            </div>
+            <div class="slide" id="picture2">
+                <div class="slide_overlay">
+                    <header class="header">
+                        <h1 class="main_title">CreativeCenter</h1>
+                        <a class="header_button" href="#scrollto"> Get started! </a>
+                    </header>
+                    <div class="slider_circle"></div>
+                    <div class="slider_circle" id="slider_cirle"></div>
+                    <div class="slider_circle"></div>
+                </div>
+            </div>
+            <div class="slide" id="picture3">
+                <div class="slide_overlay">
+                    <header class="header">
+                        <h1 class="main_title">CreativeCenter</h1>
+                        <a class="header_button" href="#scrollto"> Get started! </a>
+                    </header>
+                    <div class="slider_circle"></div>
+                    <div class="slider_circle"></div>
+                    <div class="slider_circle" id="slider_cirle"></div>
+                </div>
             </div>
         </div>
 
-        <img class="main_logo" src="./CEC_DesignerArchive/CEC Logo's/CEC Blue.png">
-
-        <header class="main_header">
-            <h1 class="header_title"> Creativity on a higher level </h1>
-            <a class="header_button" href="#"> Get started! </a>
-        </header>
-
-        <a class="mousebuttonclick" href="#main_icons"><img class="mousebutton" src="./CEC_DesignerArchive/CEC Icons/Mouse.gif"></a>
-
     </div>
 
-    <section class="main_icons" id="main_icons">
 
-        <div class="icons-icon">
-            <img class="icons-image" src="./CEC_DesignerArchive/CEC Icons/paint-brush.png">
-            <h3 class="icons_title"> Premium Design </h3>
+
+
+    <section class="sectionmain" id="scrollto">
+        <article class="articlemain">
+            <div class="articlemain2">
+                <table>
+                    <tr>
+                        <td><div class="mainline"></div></td>
+                        <td><h1 class="main_sectiontitle">Centers</h1></td>
+                        <td><div class="mainline"></div></td>
+                    </tr>
+                </table>
+                <p class="main_paragraph">Wij zijn CreativeCenters! wij zijn 2 verschillende groepen die als 1 werken. Om zo voor u het beste product te ontwerpen en te creëren. Kies hier onder een van de 2 centers die het meeste bij uw aanvraag past. En plaats onder uw gekoze center uw order. Good Luck !</p>
+                <h2 style="font-size: 30px">Choose a center</h2>
+            </div>
+        </article>
+        <div class="sectionmain_content">
+            <a class="maincenter_click" href="CodeCenter.html">
+                <article class="center" id="center">
+                    <img class="center_logo" src="./CEC_DesignerArchive/CEC Logo's/CC 4x4.png">
+                    <h2 class="center_title1">CodeCenter</h2>
+                    <h3 class="center_title2">Voor all uw code gerelateerde aanvragen!</h3>
+                    <a class="center_click" href="CodeCenter.html">Enter</a>
+                </article>
+            </a>
         </div>
-
-        <div class="icons-icon">
-            <img class="icons-image" src="./CEC_DesignerArchive/CEC Icons/give-money.png">
-            <h3 class="icons_title"> Fair Price </h3>
+        <div class="sectionmain_content" id="section2">
+            <a class="maincenter_click" href="DesignCenter.html">
+                <article class="center">
+                    <img class="center_logo" src="./CEC_DesignerArchive/CEC Logo's/DC 4x4.png">
+                    <h2 class="center_title1">DesignCenter</h2>
+                    <h3 class="center_title2">Voor all uw premium designs!</h3>
+                    <a class="center_click" href="DesignCenter.html">Enter</a>
+                </article>
+            </a>
         </div>
-
-        <div class="icons-icon">
-            <img class="icons-image" src="./CEC_DesignerArchive/CEC Icons/succes-team.png">
-            <h3 class="icons_title"> Fast Process </h3>
-        </div>
-
     </section>
 
-
-    <section class="section2">
-        <article class="center">
-            <img class="center_logo" src="./CEC_DesignerArchive/CEC Logo's/CC 4x4.png">
-            <h2 class="center_title1">CodeCenter</h2>
-            <h3 class="center_title2">put some text in here!</h3>
-            <a class="center_click" href="CodeCenter.html">Enter</a>
-        </article>
-
-        <article class="center">
-            <img class="center_logo" src="./CEC_DesignerArchive/CEC Logo's/DC 4x4.png">
-            <h2 class="center_title1">DesignCenter</h2>
-            <h3 class="center_title2">put some text in here!</h3>
-            <a class="center_click" href="DesignCenter.html">Enter</a>
-        </article>
-    </section>
 
 
     <footer class="footer">
 
         <div class="footer_logo_block">
             <img class="footer_logo" src="./CEC_DesignerArchive/CEC Logo's/CEC_White.png">
-            <h3 class="logo_text">Creative Center</h3>
+            <h3 id="logo_text">Creative Center</h3>
         </div>
 
         <div class="footerline"></div>
 
-        <article class="footer_article">
-            <h3>Portfolio's</h3>
-            <div class="footer_article2">
-                <a href="./CodeCenter.html"><b>> </b>CodeCenter</a>
-                <a href="./DesignCenter.html"><b>> </b>DesignCenter</a>
-            </div>
-        </article>
 
-        <article class="footer_article">
-            <h3>Centers</h3>
-            <div class="footer_article2">
-                <a href="./CodeCenter.html"><b>> </b>CodeCenter</a>
-                <a href="./DesignCenter.html"><b>> </b>DesignCenter</a>
-            </div>
-        </article>
 
-        <article class="footer_article">
-            <h3>Payment methods</h3>
-            <div class="footer_article2">
-                <h4>method 1</h4>
-                <h4>method 2</h4>
-                <h4>method 3</h4>
-            </div>
-        </article><br/>
+        <table class="footer_row">
+            <tr>
+                <td colspan="2" class="footer_table_title"><h3 class="footer_h3">Fast Travel:</h3></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC%20Logo's/CEC_White.png"></td>
+                <td><a href="index.html"><h4 class="footer_h4">Home</h4></a></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC%20Logo's/CEC_White.png"></td>
+                <td><a href="contact.html"><h4 class="footer_h4">Contact</h4></a></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC%20Logo's/CEC_White.png"></td>
+                <td><a target="_blank" href="https://login.creativecenter.nl/"><h4 class="footer_h4">Login</h4></a></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC%20Logo's/CEC_White.png"></td>
+                <td><a target="_blank" href="https://login.creativecenter.nl/"><h4 class="footer_h4">Register</h4></a></td>
+            </tr>
+        </table>
 
-        <div class="contact">
-            <img class="contact_image" src="./CEC_DesignerArchive/CEC Icons/mail.png">
-            <h4>Contact@CreativeCenters.one</h4>
-        </div>
-        <div class="contact">
-            <img class="contact_image" src="./CEC_DesignerArchive/CEC Icons/phone.png">
-            <h4>06-82575887</h4>
-        </div>
+        <table class="footer_row">
+            <tr>
+                <td colspan="2" class="footer_table_title"><h3 class="footer_h3">Centers:</h3></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC%20Logo's/CC_White.png"></td>
+                <td><a href="CodeCenter.html"><h4 class="footer_h4">CodeCenter</h4></a></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC%20Logo's/DC_White.png"></td>
+                <td><a href="DesignCenter.html"><h4 class="footer_h4">DesignCenter</h4></a></td>
+            </tr>
+        </table>
+
+        <table class="footer_row">
+            <tr>
+                <td colspan="2" class="footer_table_title"><h3 class="footer_h3">Contact:</h3></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC Icons/mail.png"></td>
+                <td><h4 class="footer_h4">Contact@CreativeCenter.nl</h4></td>
+            </tr>
+            <tr class="footer_tr">
+                <td class="footer_row_icon"><img class="footer_icons" src="./CEC_DesignerArchive/CEC Icons/phone.png"></td>
+                <td><h4 class="footer_h4">06-82575887</h4></td>
+            </tr>
+        </table>
+
 
         <div class="copyright">
-
             <div class="socialmedia_block">
-                <a class="Facebook" href="http://www.Facebook.com" target="_blank"></a>
-                <a class="Instagram" href="http://www.Instagram.com" target="_blank"></a>
-                <a class="Twitter" href="http://www.Twitter.com" target="_blank"></a>
+                <a class="Facebook" href="https://www.Facebook.com" target="_blank"></a>
+                <a class="Instagram" href="https://www.Instagram.com" target="_blank"></a>
+                <a class="Twitter" href="https://www.Twitter.com" target="_blank"></a>
             </div>
-
-            <h4 class="text_footer">© Copyright 2017 Creative Centers</h4>
+            <h4 class="footer_h4" id="footer_text">© Copyright 2018 CreativeCenter</h4>
         </div>
+
     </footer>
+
 
 </div>
 </body>
